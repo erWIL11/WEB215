@@ -1,0 +1,44 @@
+/** CSS for Content Page **/ 
+
+
+/**Body**/
+
+body{
+	background: #ccd9ff;
+}
+
+
+
+/**Navigation bar CSS **/ 
+	
+.nav{
+	padding-bottom: 100px; 
+}
+
+ul{
+	text-align: center;
+	list-style-type: none; 
+	margin:0; 
+	padding:0; 
+	background-color:lightblue; 
+	/*padding:3px; */
+
+}
+
+
+.list li {
+	font-size: 18px; 
+	display: inline;
+	padding: 20px;
+	text-align: center; 
+
+}
+
+h1{
+	margin:0px 0px 5px 60px; 
+}
+p{
+	text-indent:50px; 
+    height: 190px; background-color: white; margin:0px 60px 10px 60px; 
+
+}
