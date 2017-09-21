@@ -1,0 +1,84 @@
+/** CSS for Content Page **/ 
+
+
+/**Body**/
+
+body{
+	background: #ccd9ff;
+}
+ body{
+	font-family: Arial, Verdana, tahoma;
+	font-size: 14px; 
+	
+}
+
+
+
+
+/**Navigation bar CSS **/ 
+
+header{
+	padding:10px 20px 130px 20px; 
+}
+
+legend{
+	font-size: 18px; 
+	padding-bottom: 10px; 
+}
+	
+.nav{
+	padding-bottom: 100px; 
+}
+ul{
+	text-align: center;
+	list-style-type: none; 
+	margin:0; 
+	padding:0; 
+	background-color:lightblue; 
+	/*padding:3px; */
+
+}
+.list li {
+	font-size:18px; 
+	display: inline;
+	padding: 20px 20px;
+	text-align: center; 
+	color: white; 
+	
+
+}
+
+a{
+	padding: 8px; 
+
+}
+
+/**Form **/
+
+fieldset{
+	background-color: white; 
+	border: 3px solid;
+	width: 30%; 
+	margin: 0 auto;
+	text-align: center; 
+	padding: 15px 0px;
+	
+}	
+
+	
+label{
+		clear:left; 
+		display:block; 
+		float: left; 
+		font-size: 0.9em; 
+		margin: 8px 7px; 
+		width: 40%; 
+}
+	
+input{
+		display: block; 
+		float: left; 
+		font-size: 0.9em; 
+		margin: 6px 0px; 
+		width: 30%; 
+}
