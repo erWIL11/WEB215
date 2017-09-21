@@ -99,7 +99,7 @@ function testPopDays(){
 	
 	//null return value 
 	var option = mostPopularDays(null); 
-	//console.log("Expected null Shows " + option); 
+	console.log("Expected null Shows " + option); 
 	
 
 }
