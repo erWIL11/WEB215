@@ -59,6 +59,8 @@ function mostPopularDays(week) {
 	   }
 	   //start with a max of zero 
 	   var maxDay = new Weekday("", 0);
+	   var maxDays = [maxDay];
+	   
 	   
 	   //first pass -- just try to print out the max
 	   for (var i=0; i < week.length; i++){
@@ -68,15 +70,32 @@ function mostPopularDays(week) {
 		   + ' name= ' + week[i].name 
 		   + ' traffic = ' + week[i].traffic); 
 		   
-		   //is today the new max? 
-		   if(today.traffic > maxDay.traffic){
-			   maxDay.traffic = today.traffic; 
-			   maxDay.name = today.name; 
+		    //Is it a tie
+		   if(today.traffic == maxDays[0].traffic) {
+			   var tiedDay = new Weekday(today.name,today.traffic); 
+			   maxDays.push(tiedDay);
 		   }
 		   
+		   //is today the new max? 
+		   if(today.traffic > maxDays[0].traffic){
+			   maxDays = []; 
+			   var maxDay = new Weekday(today.name,today.traffic); 
+			   maxDays.push(maxDay);
+		   }
+		  
 	   }
 	   //console.log('max is ' + maxDay.name); 
-	   return maxDay.name; 
+	   //returning an array of names 
+	   //empty out array to compare tie 
+	   
+	   var answer = []; 
+	   for(var i=0; i < maxDays.length; i++){
+		  answer.push(maxDays[i].name);  
+	   }
+	   if(answer.length == 1){
+		   return answer[0]; 
+	   }
+	   return answer; 
 }
 
 /* test driver function for mostPopularDays 
@@ -84,7 +103,7 @@ function mostPopularDays(week) {
 function testPopDays(){
 	//set up an array of Weekday objects
 	var mon = new Weekday('Monday',3); 
-	var tue = new Weekday('Tuesday',2);
+	var tue = new Weekday('Tuesday',4);
 	var wed = new Weekday('Wednesday',4);
 	var thu = new Weekday('Thursday',1);
 	var fri = new Weekday('Friday',0);
