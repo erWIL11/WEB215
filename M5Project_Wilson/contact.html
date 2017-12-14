@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "utf-8">
+<title>Visit</title> 
+<link rel="stylesheet" href="./Styles/bootstrap.min.css" />
+<link rel='stylesheet' href='./Styles/Themes/light.css' />
+<link href = "contactcss.css" rel ="stylesheet" type = "text/css"/>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!---Social Icons-->
+<style>
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+</style>
+
+
+
+
+</head>
+
+	<body>
+	<div class = "container"> 
+	<div class = "jumbotron">
+		<section id ="title"> 
+		<h1>Contact</h1>
+		</section>
+		</div>
+		
+		<!---Navagation Bar --> 
+	<div class = "row">
+	
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Love Luminance</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Home.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="gardens.html">Gardens</a></li> 
+        <li><a href="nature.html">Nature</a></li> 
+		<li><a href="events.html">Events</a></li> 
+		<li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      </div>
+     </div>
+     </nav>
+		
+		<!---<div class = "row">
+		<div class = "col-xs-12 col-md-8 col-lg-push-3">
+		
+		<nav class="navbar navbar">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href ="LoveLumHome.html">About</a></li>
+			<li><a href ="team.html">Team</a></li>
+			<li><a href ="gardens.html">Gardens</a></li>
+			<li><a href ="nature.html">Nature</a></li>
+			<li><a href ="events.html">Events</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+		
+		</ul>
+	</nav>
+	</div>
+	</div>
+	</div>--->
+		
+	
+	<div class = "row"> 
+	<div class = "col-xs-12 col-md-8 col-lg-push-4">
+	
+	<form id ="contactInfo" name="contactInfo"
+			action = "kenneth.kleiner.ftcc@gmail.com"
+			method="post">
+			
+	<fieldset id="signup">
+		<legend>Newsletter Signup / Volunteer Form</legend>
+		
+		<label for = "name">Name</label> 
+		<input name = "Name" id="name"
+				placeholder = "first and last name" />
+		
+		<label for = "city">City</label>
+		<input name = "City" id="city" />
+		
+		<label for = "state(abbr.)">State</label> 
+		<input name = "State" id="state" 
+				placeholder = "NC" />
+		
+		<label for = "postal code">Postal Code</label>
+		<input name = "Zip" id="zip" type = "text"
+			   placeholder ="nnnnn (-nnnn)"
+			   pattern = "^\d{5}(\-\d{4})?$" />
+		
+		<label for = "phonenumber">Phone Number</label>
+		<input name ="phonenumber" id="phonenumber" 
+				placeholder = "(xxx) xxx-xxxx" type = "tel" />
+		
+		<label for = "E-mail">E-mail *</label>
+		<input name = "email" id="email" type = "email" /> 
+		
+		<label for = "password">Password</label>
+		<input name = "Password" type = "password" /> 
+	</fieldset> 
+	</div>
+	</div> 
+	
+		<div class = "row"> 
+		<div class = "col-xs-12 col-md-8 col-lg-push-4">
+		<!--Drop Down Selection list 1 --->
+		<fieldset id= "options">
+		<legend>Newsletter or Volunteer (BOTH)</legend>
+		
+		<select name = "info" id = "info" size ="2" multiple="multiple">
+			<option value = "newsletter">Newsletter</option> 
+			<option value = "volunteer">Volunteer<option>
+		</select>
+		
+		<!--Drop Down Selection list2 -->
+		<label for = "seekpk">Pick a Pack of Seeds</label>
+		<select name = "seedpk">
+			<optgroup label = "Herbs">
+				<option value ="h1">Basil</option> 
+				<option value ="h2">Parsley</option>
+				<option value ="h3">Dill</option>
+				<option value ="h4">Cilantro</option>
+				<option value ="h5">Oregano</option>
+				<option value ="h6">Chives</option>
+				<option value ="h7">Mint</option>
+			</optgroup>
+			<optgroup label = "Vegetables/Fruit">
+				<option value ="v1">Tomato(Better Boy)</option>
+				<option value ="v2">Cherry Tomato</option>
+				<option value ="v3">Cucumber</option>
+				<option value ="v4">Sweet Bell Pepper(Green)</option> 
+				<option value ="v5">Serrano Chili Pepper</option>
+			</optgroup>
+				
+		</select>
+	
+		
+		<!-- Option1 Section -->
+		<label>Do you have a garden?</label>
+		<fieldset class = "optionGroup1">
+			<label for = "oyes">Yes</label> 
+			<input type = "radio" name ="personalgarden" id = "oyes"
+					      value = "yes" />
+			<label for = "ono">No</label>
+			<input type = "radio" name ="personalgarden" id = "ono"
+						  value = "no" />
+		</fieldset>
+						  
+		<!--Option2 Section --->
+		<label>What Vegetables/Fruit Do You Consume The Most?</label>
+		<fieldset class = "optionGroup2">
+			<label for = "tomatoes">Tomato</label> 
+			<input type = "radio" name = "favVeggies" id = "tomatoes"
+							value = "tomatoes" />
+			<label for = "squash">Squash</label>
+			<input type = "radio" name = "favVeggies" id = "squash"
+							value = "squash" /> 
+							
+							
+			<label for = "zucchini">Zucchini</label> 
+			<input type = "radio" name = "favVeggies" id ="zucchini"
+							value = "zucchini" /> 
+						
+			<label for = "onions">Onion</label>
+			<input type = "radio" name = "favVeggies" id ="onions"
+						   value = "onions" /> 
+						   
+			<label for = "cucumbers">Cucumber</label>
+			<input type = "radio" name = "favVeggies" id ="cucumbers"
+						   value = "cucumbers" /> 
+						   
+			<label for = "eggplants">Eggplant</label> 
+			<input type = "radio" name = "favVeggies" id="eggplants" 
+						   value = "eggplants" /> 
+						   
+			<label for = "argula">Arugula</label>
+			<input type = "radio" name = "favVeggies" id="argula" 
+						   value = "argula" /> 
+						   
+			<label for = "hotpeppers"> Hot Peppers </label> 
+			<input type= "radio" name = "favVeggies" id ="hotpeppers"
+						   value = "hotpeppers" />
+							
+		</fieldset>
+		
+		
+		<!--Range Data -->
+		<label>Rate your gardening skills!<br />
+			   (0 = none; 10 = expert)</label>
+		<label class = "sliderPointer">0</label>
+		<input name = "level" id="level" type = "range" value = "5"
+				min = "0" max = "10" step = "1" />
+		<label class = "sliderPointer">10</label> 
+				
+		<!--Text Area -->
+		
+		<label for = "suggest">Suggestions & Feedback</label> 
+		<textarea name = "suggest" id ="comments"></textarea>
+		
+		<!--Check box to submit information -->
+		<label id = "submitForm">
+			<input type = "checkbox" name = "subForm1" />
+			Sign Me Up - For Newsletter or Volunteer position 
+		</label>
+		<form>
+		
+		<div class = "form-group"> 
+			<button type ="button" id ="submit" class="btn btn-success col-md-2 col-lg-push-4">
+				Submit</button>
+				<button type ="clear" id ="clear" class="btn btn-success col-md-offset-3 col-md-2 col-lg-push-1">
+				Clear</button>
+			</div> 
+	
+		</form>
+	
+	</fieldset>
+	</div>
+	</div>
+	
+	<footer>
+		<div id="siteName">
+		<p><b>Love Luminance</b><br>2017</p>
+		
+		<br>
+		
+			<div style ="text-align: center">
+			<a href="faytech214@gmail.com" target="_blank" alt ="facebook">
+				<span class="fa fa-facebook"></span> 
+			</a>
+			<a href ="faytech232@gmail.com" target="_blank" alt="twitter">
+				<span class="fa fa-twitter"></span>
+			</a>
+			
+			<a href="https://www.linkedin.com/edu/fayetteville-technical-community-college-32013" target="_blank" alt="pinterest"> 
+				<span class="fa fa-linkedin"</span>
+			</a>	
+			
+	
+		</div>
+		</div>
+	
+		
+		
+	</footer>
+	</div>
+	
+	
+	
+	<script src='./Scripts/jquery-3.2.1.min.js'></script>
+	<script src='./Scripts/bootstrap.min.js'></script>
+	<script src= './Scripts/main.js'></script>
+	
+		
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105599689-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-105599689-1');
+</script>
+
+ 
+
+	</body>
+</html>
+	
+
+	
+	
+		
+		
+		
+		
+	
+	
+	
+		
+		
+	

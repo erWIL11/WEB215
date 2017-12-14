@@ -1,0 +1,106 @@
+/* CSS Stylesheet
+filename:eventsPage.css
+
+
+ */
+ 
+
+/*Body*/
+
+
+body{
+	
+	font-family:Verdana, arial, sans-serif;
+	font-size:14px;
+	border-radius:10px / 20px; 
+	
+}
+
+h1{
+	text-align:center; 
+	color:#004d00;
+}
+h2{
+	text-align:center;
+	color:#004d00;
+}
+
+p {
+	  padding:10px 50px 5px 50px;
+	  /*text-indent:15px;*/
+	  align-text:center;
+	  
+	  
+	  
+}
+
+/* Navigation Bar 
+
+nav{
+	padding: 20px;
+}
+
+ul{
+	text-align: center;
+	list-style-type: none; 
+	margin:0; 
+	padding:3px; 
+
+}
+.list li {
+	display: inline;
+	padding: 16px;
+	text-align: center;
+	
+
+}*/
+
+/* Table */
+table {
+	
+	margin: auto; 
+	border: 5px solid #88cc00;
+	float: center;
+	background-color:white;
+	padding-bottom: 15px;
+
+
+}
+td, th {
+	padding: 0.5em;
+	border: 5px; 
+	border: 1px solid #ff4da6;
+}
+
+img {
+	float:right; 
+	margin: auto; 
+	padding: 20px; 
+}
+
+img{
+	width:320px;
+	height:260px; 
+	
+}
+
+div#siteName{
+	
+	clear:both;
+	right:0; 
+	bottom:0; 
+	left:0;
+	/*width:100%;
+	height:30px;
+	bottom:100%;*/
+	text-align:center;
+	background:#fff2e6;
+	padding: 2px 0px 25px 0px;
+	background:url(images/newHeader2.jpg);
+	color:white; 
+	
+}
+
+
+
+
